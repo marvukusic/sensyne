@@ -8,5 +8,15 @@
 import Foundation
 
 class HospitalsViewModel {
+    let networkService: NetworkService
     
+    init(networkService: NetworkService) {
+        self.networkService = networkService
+    }
+    
+    func loadData() {
+        networkService.getHospitalList { (list, error) in
+            print(list, error)
+        }
+    }
 }

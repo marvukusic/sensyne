@@ -16,6 +16,12 @@
 		BF28FB5C252DE600005C338E /* SensyneTechTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF28FB5B252DE600005C338E /* SensyneTechTestTests.swift */; };
 		BF28FB67252DE600005C338E /* SensyneTechTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF28FB66252DE600005C338E /* SensyneTechTestUITests.swift */; };
 		BF28FB83252DE7EE005C338E /* HospitalsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF28FB82252DE7EE005C338E /* HospitalsViewModel.swift */; };
+		BF28FB94252DF532005C338E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF28FB93252DF532005C338E /* NetworkService.swift */; };
+		BF28FB95252DF532005C338E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF28FB93252DF532005C338E /* NetworkService.swift */; };
+		BF28FB96252DF532005C338E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF28FB93252DF532005C338E /* NetworkService.swift */; };
+		BF28FBA0252DF8CD005C338E /* HospitalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF28FB9F252DF8CD005C338E /* HospitalModel.swift */; };
+		BF28FBA1252DF8CD005C338E /* HospitalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF28FB9F252DF8CD005C338E /* HospitalModel.swift */; };
+		BF28FBA2252DF8CD005C338E /* HospitalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF28FB9F252DF8CD005C338E /* HospitalModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,8 @@
 		BF28FB66252DE600005C338E /* SensyneTechTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensyneTechTestUITests.swift; sourceTree = "<group>"; };
 		BF28FB68252DE600005C338E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF28FB82252DE7EE005C338E /* HospitalsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsViewModel.swift; sourceTree = "<group>"; };
+		BF28FB93252DF532005C338E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		BF28FB9F252DF8CD005C338E /* HospitalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,8 @@
 				BF28FB46252DE5FD005C338E /* SceneDelegate.swift */,
 				BF28FB4F252DE600005C338E /* LaunchScreen.storyboard */,
 				BF28FB77252DE6EF005C338E /* Scenes */,
+				BF28FB9E252DF8B8005C338E /* Model */,
+				BF28FB92252DF51A005C338E /* Service */,
 				BF28FB7E252DE73D005C338E /* Resources */,
 				BF28FB52252DE600005C338E /* Info.plist */,
 			);
@@ -145,6 +155,22 @@
 				BF28FB4D252DE600005C338E /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		BF28FB92252DF51A005C338E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BF28FB93252DF532005C338E /* NetworkService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BF28FB9E252DF8B8005C338E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF28FB9F252DF8CD005C338E /* HospitalModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,8 +303,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF28FB94252DF532005C338E /* NetworkService.swift in Sources */,
 				BF28FB49252DE5FD005C338E /* HospitalsViewController.swift in Sources */,
 				BF28FB45252DE5FD005C338E /* AppDelegate.swift in Sources */,
+				BF28FBA0252DF8CD005C338E /* HospitalModel.swift in Sources */,
 				BF28FB83252DE7EE005C338E /* HospitalsViewModel.swift in Sources */,
 				BF28FB47252DE5FD005C338E /* SceneDelegate.swift in Sources */,
 			);
@@ -288,6 +316,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF28FBA1252DF8CD005C338E /* HospitalModel.swift in Sources */,
+				BF28FB95252DF532005C338E /* NetworkService.swift in Sources */,
 				BF28FB5C252DE600005C338E /* SensyneTechTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +326,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF28FBA2252DF8CD005C338E /* HospitalModel.swift in Sources */,
+				BF28FB96252DF532005C338E /* NetworkService.swift in Sources */,
 				BF28FB67252DE600005C338E /* SensyneTechTestUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

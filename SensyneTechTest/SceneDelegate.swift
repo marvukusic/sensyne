@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let storyboard = UIStoryboard(name: "Hospitals", bundle: nil)
         guard let viewController = storyboard.instantiateViewController(withIdentifier: "HospitalsViewController") as? HospitalsViewController else { return }
         
-        let viewModel = HospitalsViewModel()
+        let viewModel = HospitalsViewModel(networkService: NetworkService())
         viewController.viewModel = viewModel
         
         let navigationController = UINavigationController(rootViewController: viewController)

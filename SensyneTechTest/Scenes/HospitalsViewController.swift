@@ -14,9 +14,17 @@ class HospitalsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Hospital list"
+        setTitle()
+        loadData()
     }
 
+    private func setTitle() {
+        title = "Hospital list"
+    }
+    
+    private func loadData() {
+        viewModel?.loadData()
+    }
 
 }
 
