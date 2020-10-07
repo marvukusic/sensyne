@@ -15,8 +15,8 @@ class HospitalsViewModel {
     }
     
     func loadData() {
-        networkService.getHospitalList { (list, error) in
-            print(list, error)
+        networkService.getHospitalList { list in
+            print(list)
         }
     }
 }

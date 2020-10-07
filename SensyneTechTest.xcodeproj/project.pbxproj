@@ -22,6 +22,9 @@
 		BF28FBA0252DF8CD005C338E /* HospitalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF28FB9F252DF8CD005C338E /* HospitalModel.swift */; };
 		BF28FBA1252DF8CD005C338E /* HospitalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF28FB9F252DF8CD005C338E /* HospitalModel.swift */; };
 		BF28FBA2252DF8CD005C338E /* HospitalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF28FB9F252DF8CD005C338E /* HospitalModel.swift */; };
+		BF28FBB0252E0C7C005C338E /* Hospitals.csv in Resources */ = {isa = PBXBuildFile; fileRef = BF28FBAF252E0C7C005C338E /* Hospitals.csv */; };
+		BF28FBB1252E0C7C005C338E /* Hospitals.csv in Resources */ = {isa = PBXBuildFile; fileRef = BF28FBAF252E0C7C005C338E /* Hospitals.csv */; };
+		BF28FBB2252E0C7C005C338E /* Hospitals.csv in Resources */ = {isa = PBXBuildFile; fileRef = BF28FBAF252E0C7C005C338E /* Hospitals.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,7 @@
 		BF28FB82252DE7EE005C338E /* HospitalsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsViewModel.swift; sourceTree = "<group>"; };
 		BF28FB93252DF532005C338E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		BF28FB9F252DF8CD005C338E /* HospitalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalModel.swift; sourceTree = "<group>"; };
+		BF28FBAF252E0C7C005C338E /* Hospitals.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hospitals.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,7 @@
 		BF28FB7E252DE73D005C338E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BF28FBAF252E0C7C005C338E /* Hospitals.csv */,
 				BF28FB4D252DE600005C338E /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -278,6 +283,7 @@
 			files = (
 				BF28FB51252DE600005C338E /* LaunchScreen.storyboard in Resources */,
 				BF28FB4E252DE600005C338E /* Assets.xcassets in Resources */,
+				BF28FBB0252E0C7C005C338E /* Hospitals.csv in Resources */,
 				BF28FB4C252DE5FD005C338E /* Hospitals.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF28FBB1252E0C7C005C338E /* Hospitals.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF28FBB2252E0C7C005C338E /* Hospitals.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
