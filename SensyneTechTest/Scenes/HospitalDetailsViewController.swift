@@ -13,7 +13,6 @@ class HospitalDetailsViewController: UIViewController {
     
     var hospital: HospitalModel?
 
-    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var sectorLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
@@ -29,7 +28,6 @@ class HospitalDetailsViewController: UIViewController {
     func fillData() {
         guard let hospital = hospital else { return }
         title = hospital.organisationName
-        nameLabel.text = hospital.organisationName
         sectorLabel.text = hospital.sector
         addressLabel.text = [hospital.address1, hospital.address2, hospital.address3].filter({$0 != ""}).joined(separator: ", ")
         cityLabel.text = [hospital.city, hospital.county, hospital.postcode].filter({$0 != ""}).joined(separator: ", ")
