@@ -8,10 +8,13 @@
 import UIKit
 
 class HospitalsViewController: UIViewController {
+    
+    var viewModel: HospitalsViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        title = "Hospital list"
     }
 
 

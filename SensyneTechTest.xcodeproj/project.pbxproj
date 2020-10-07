@@ -15,6 +15,7 @@
 		BF28FB51252DE600005C338E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF28FB4F252DE600005C338E /* LaunchScreen.storyboard */; };
 		BF28FB5C252DE600005C338E /* SensyneTechTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF28FB5B252DE600005C338E /* SensyneTechTestTests.swift */; };
 		BF28FB67252DE600005C338E /* SensyneTechTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF28FB66252DE600005C338E /* SensyneTechTestUITests.swift */; };
+		BF28FB83252DE7EE005C338E /* HospitalsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF28FB82252DE7EE005C338E /* HospitalsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		BF28FB62252DE600005C338E /* SensyneTechTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SensyneTechTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF28FB66252DE600005C338E /* SensyneTechTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensyneTechTestUITests.swift; sourceTree = "<group>"; };
 		BF28FB68252DE600005C338E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF28FB82252DE7EE005C338E /* HospitalsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +103,9 @@
 			children = (
 				BF28FB44252DE5FD005C338E /* AppDelegate.swift */,
 				BF28FB46252DE5FD005C338E /* SceneDelegate.swift */,
+				BF28FB4F252DE600005C338E /* LaunchScreen.storyboard */,
 				BF28FB77252DE6EF005C338E /* Scenes */,
 				BF28FB7E252DE73D005C338E /* Resources */,
-				BF28FB4F252DE600005C338E /* LaunchScreen.storyboard */,
 				BF28FB52252DE600005C338E /* Info.plist */,
 			);
 			path = SensyneTechTest;
@@ -132,6 +134,7 @@
 			children = (
 				BF28FB4A252DE5FD005C338E /* Hospitals.storyboard */,
 				BF28FB48252DE5FD005C338E /* HospitalsViewController.swift */,
+				BF28FB82252DE7EE005C338E /* HospitalsViewModel.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			files = (
 				BF28FB49252DE5FD005C338E /* HospitalsViewController.swift in Sources */,
 				BF28FB45252DE5FD005C338E /* AppDelegate.swift in Sources */,
+				BF28FB83252DE7EE005C338E /* HospitalsViewModel.swift in Sources */,
 				BF28FB47252DE5FD005C338E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
