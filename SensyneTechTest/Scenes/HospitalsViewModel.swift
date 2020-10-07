@@ -14,9 +14,7 @@ class HospitalsViewModel {
         self.networkService = networkService
     }
     
-    func loadData() {
-        networkService.getHospitalList { list in
-            print(list)
-        }
+    func loadData() -> [HospitalModel] {
+        return networkService.getHospitalList()
     }
 }

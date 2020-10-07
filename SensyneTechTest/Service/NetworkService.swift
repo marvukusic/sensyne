@@ -11,22 +11,19 @@ class NetworkService {
     let defaultSession = URLSession(configuration: .default)
     var dataTask: URLSessionDataTask?
     
-    typealias QueryResult = ([HospitalModel]) -> Void
-    
-    func getHospitalList(completion: @escaping QueryResult) {
+    func getHospitalList() -> [HospitalModel] {
         if let url = URL(string: "http://media.nhschoices.nhs.uk/data/foi/Hospital.csv") {
             do {
                 let data = try String(contentsOf: url, encoding: .ascii)
                 let hospitals = parseCsv(data)
-                completion(hospitals)
-                return
+                return hospitals
             } catch {
                 let data = getFileData(file: "Hospitals", type: "csv")
                 let hospitals = parseCsv(data)
-                return completion(hospitals)
+                return hospitals
             }
         } else {
-            return completion([])
+            return []
         }
     }
     
