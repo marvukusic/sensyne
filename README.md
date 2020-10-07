@@ -1,4 +1,4 @@
-# Sendyne Test
+# Sensyne Test
 * Developed in Xcode version 12
 * No 3rd party libraries used
 
