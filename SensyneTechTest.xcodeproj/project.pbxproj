@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		BF28FB45252DE5FD005C338E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF28FB44252DE5FD005C338E /* AppDelegate.swift */; };
 		BF28FB47252DE5FD005C338E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF28FB46252DE5FD005C338E /* SceneDelegate.swift */; };
-		BF28FB49252DE5FD005C338E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF28FB48252DE5FD005C338E /* ViewController.swift */; };
-		BF28FB4C252DE5FD005C338E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF28FB4A252DE5FD005C338E /* Main.storyboard */; };
+		BF28FB49252DE5FD005C338E /* HospitalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF28FB48252DE5FD005C338E /* HospitalsViewController.swift */; };
+		BF28FB4C252DE5FD005C338E /* Hospitals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF28FB4A252DE5FD005C338E /* Hospitals.storyboard */; };
 		BF28FB4E252DE600005C338E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF28FB4D252DE600005C338E /* Assets.xcassets */; };
 		BF28FB51252DE600005C338E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF28FB4F252DE600005C338E /* LaunchScreen.storyboard */; };
 		BF28FB5C252DE600005C338E /* SensyneTechTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF28FB5B252DE600005C338E /* SensyneTechTestTests.swift */; };
@@ -38,8 +38,8 @@
 		BF28FB41252DE5FD005C338E /* SensyneTechTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SensyneTechTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF28FB44252DE5FD005C338E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF28FB46252DE5FD005C338E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF28FB48252DE5FD005C338E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BF28FB4B252DE5FD005C338E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF28FB48252DE5FD005C338E /* HospitalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsViewController.swift; sourceTree = "<group>"; };
+		BF28FB4B252DE5FD005C338E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Hospitals.storyboard; sourceTree = "<group>"; };
 		BF28FB4D252DE600005C338E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF28FB50252DE600005C338E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF28FB52252DE600005C338E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,9 +101,8 @@
 			children = (
 				BF28FB44252DE5FD005C338E /* AppDelegate.swift */,
 				BF28FB46252DE5FD005C338E /* SceneDelegate.swift */,
-				BF28FB48252DE5FD005C338E /* ViewController.swift */,
-				BF28FB4A252DE5FD005C338E /* Main.storyboard */,
-				BF28FB4D252DE600005C338E /* Assets.xcassets */,
+				BF28FB77252DE6EF005C338E /* Scenes */,
+				BF28FB7E252DE73D005C338E /* Resources */,
 				BF28FB4F252DE600005C338E /* LaunchScreen.storyboard */,
 				BF28FB52252DE600005C338E /* Info.plist */,
 			);
@@ -126,6 +125,23 @@
 				BF28FB68252DE600005C338E /* Info.plist */,
 			);
 			path = SensyneTechTestUITests;
+			sourceTree = "<group>";
+		};
+		BF28FB77252DE6EF005C338E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BF28FB4A252DE5FD005C338E /* Hospitals.storyboard */,
+				BF28FB48252DE5FD005C338E /* HospitalsViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		BF28FB7E252DE73D005C338E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF28FB4D252DE600005C338E /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +249,7 @@
 			files = (
 				BF28FB51252DE600005C338E /* LaunchScreen.storyboard in Resources */,
 				BF28FB4E252DE600005C338E /* Assets.xcassets in Resources */,
-				BF28FB4C252DE5FD005C338E /* Main.storyboard in Resources */,
+				BF28FB4C252DE5FD005C338E /* Hospitals.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF28FB49252DE5FD005C338E /* ViewController.swift in Sources */,
+				BF28FB49252DE5FD005C338E /* HospitalsViewController.swift in Sources */,
 				BF28FB45252DE5FD005C338E /* AppDelegate.swift in Sources */,
 				BF28FB47252DE5FD005C338E /* SceneDelegate.swift in Sources */,
 			);
@@ -296,12 +312,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BF28FB4A252DE5FD005C338E /* Main.storyboard */ = {
+		BF28FB4A252DE5FD005C338E /* Hospitals.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BF28FB4B252DE5FD005C338E /* Base */,
 			);
-			name = Main.storyboard;
+			name = Hospitals.storyboard;
 			sourceTree = "<group>";
 		};
 		BF28FB4F252DE600005C338E /* LaunchScreen.storyboard */ = {
