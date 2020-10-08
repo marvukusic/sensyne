@@ -5,9 +5,8 @@
 * Unit and UI tests included
 
 ## Description
-App shows a list of hospitals that can be found in remote CSV file at following URL: http://media.nhschoices.nhs.uk/data/foi/Hospital.csv
-If remote file cannot be found, app defaults to local Hospital.csv file included in the budle.
-List can be filtered to show only NHS hospitals.
+App shows a list of hospitals that can be found in remote CSV file at following URL: http://media.nhschoices.nhs.uk/data/foi/Hospital.csv. If remote file cannot be found, app defaults to local Hospital.csv file included in the budle.  
+List can be filtered to show only NHS hospitals.  
 Touching on a hospital opens its details like address and location on a map.
 
 ## Unit Testing
