@@ -29,6 +29,12 @@ class HospitalsViewController: UIViewController {
         
         setTitle()
         loadData()
+        setXcTestData()
+    }
+    
+    private func setXcTestData() {
+        view.accessibilityIdentifier = "hospitalList"
+        tableView.accessibilityIdentifier = "hospitalListTableView"
     }
 
     private func setTitle() {
@@ -61,6 +67,7 @@ extension HospitalsViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = hospitalsFiltered[indexPath.row].organisationName
         cell.detailTextLabel?.text = hospitalsFiltered[indexPath.row].sector
+        cell.accessibilityIdentifier = "hospitalListTableViewCell_\(indexPath.row)"
         return cell
     }
 }

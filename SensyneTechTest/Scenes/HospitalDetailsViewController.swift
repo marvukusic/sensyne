@@ -23,6 +23,11 @@ class HospitalDetailsViewController: UIViewController {
 
         fillData()
         setMap()
+        setXcTestData()
+    }
+    
+    private func setXcTestData() {
+        view.accessibilityIdentifier = "hospitalDetails"
     }
     
     func fillData() {
